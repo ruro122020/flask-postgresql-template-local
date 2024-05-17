@@ -1,0 +1,17 @@
+To start working on project:
+
+1. Start the database server in one terminal
+
+```
+sudo service postgresql start
+sudo -i -u postgres psql
+```
+Leave postgres terminal running
+
+2. Start the flask application in another terminal
+
+```
+pipenv shell
+python app.py
+```
+
