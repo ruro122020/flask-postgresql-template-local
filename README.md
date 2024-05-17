@@ -17,6 +17,7 @@ app.secret_key= os.getenv('YOUR ENVIROMENT VARIABLE GOES HERE')
 Assuming postgresql is installed and ready to use, to start working on project:
 
 1. Start postgresql server in one ubuntu terminal 
+
 Note: postgresql is a database server seperate from the flask application server. When starting the database locally, you can start it from any root user in the ubuntu terminal. It doesn't need to be at the root of the projects directory but that is okay too.
 
 ```
