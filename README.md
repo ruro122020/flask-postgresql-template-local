@@ -13,3 +13,20 @@ python -c 'import os; print(os.urandom(16))'
 ```
 app.secret_key= os.getenv('YOUR ENVIROMENT VARIABLE GOES HERE')
 ```
+
+Assuming postgresql is installed and ready to use, to start working on project:
+
+1. Start postgresql server in one ubuntu terminal
+
+```
+sudo service postgresql start
+sudo -i -u postgres psql
+```
+Leave postgres terminal running
+
+2. Start the flask application in another ubuntu terminal
+
+```
+pipenv shell
+python app.py
+```
