@@ -1,14 +1,22 @@
 Backend flask application using postgresql.
 
-After installing packages, to use flask session object for cookies, do the following:
+This template will get you started with the backend of an application that will need a user account feature. 
 
-1. Create a .env file in the root directory
-2. Create an enviromental variable and set it equal to anything you want. You can also generate a key by running the following in the ubuntu terminal. Set the results to your variable. 
+The user model, marshmallow schema, and routes have been created to get you started. (adjust code to your projects needs)
+
+For the account feature to work the following is needed:
+
+1. Install packages 
+``` 
+pipenv install 
+```
+2. Create a .env file in the root directory
+3. Create an enviromental variable and set it equal to anything you want. You can also generate a key by running the following in the ubuntu terminal. Set the results to your variable. 
 
 ```
 python -c 'import os; print(os.urandom(16))'
 ```
-3. In the following line add the variable name like so:
+4. In the config.py file add the variable name like so:
 
 ```
 app.secret_key= os.getenv('YOUR ENVIROMENT VARIABLE GOES HERE')

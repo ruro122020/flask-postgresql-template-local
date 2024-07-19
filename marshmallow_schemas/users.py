@@ -1,5 +1,5 @@
 from config import ma
-from models.models import User
+from models import User
 
 
 class UserSchema(ma.Schema):

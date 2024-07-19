@@ -1,7 +1,7 @@
 from flask import request, session
 from flask_restful import Resource
 from config import api
-from models.models import User
+from models import User
 from marshmallow_schemas.users import user_schema
 
 class Login(Resource):
