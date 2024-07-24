@@ -6,4 +6,6 @@ The User model, schema, and login/signup/checksession routes have been created t
 
 To get started following the instructions [here](https://ruthr.hashnode.dev/api-template-with-flask-sqlalchemy-postgresql) 
 
-Feel free to raise an issue if you run into any problems
+Feel free to raise an issue if you run into any problems!
+
+Happy coding! 😊
