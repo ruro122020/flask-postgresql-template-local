@@ -4,6 +4,7 @@ from config import app, db, api
 from models import User
 from sqlalchemy.exc import IntegrityError
 from marshmallow_schemas.users import user_schema
+
 class Signup(Resource):
 
   def post(self):

@@ -22,15 +22,15 @@ python -c 'import os; print(os.urandom(16))'
 app.secret_key= os.getenv('YOUR ENVIROMENT VARIABLE GOES HERE')
 ```
 
-Assuming postgresql is installed and ready to use, to start working on project:
+Assuming postgresql is installed and ready to use, to use the user account feature:
 
 1. Start postgresql server in one ubuntu terminal 
 
-Note: postgresql is a database server seperate from the flask application server. When starting the database locally, you can start it from any root user in the ubuntu terminal. It doesn't need to be at the root of the projects directory but that is okay too.
+Note: postgresql database server is separate from the flask API server. When starting the database locally, you can start it from any root user in the ubuntu terminal. It doesn't need to be at the root of the projects directory but that is okay too.
 
 ```
 sudo service postgresql start
-sudo -i -u postgres psql
+psql -U {user} -d {dbname}
 ```
 Leave postgres terminal running
 

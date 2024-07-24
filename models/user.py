@@ -6,7 +6,6 @@ from sqlalchemy.orm import validates
 from config import db, bcrypt
 
 class User(db.Model):
-  
   __tablename__ = 'users'
 
   __table_args__ = (db.CheckConstraint('length(name) > 3', name='ck_user_name_length'),)
