@@ -27,4 +27,4 @@ class Signup(Resource):
     
 
 
-api.add_resource(Signup, '/signup', endpoint='signup')
+api.add_resource(Signup, '/signup')

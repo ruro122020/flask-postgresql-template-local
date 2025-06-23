@@ -4,7 +4,43 @@ This template will get you started with a flask application using PostgreSQL and
 
 The user model, marshmallow schema, and login/signup/checksession routes have been created to get you started. (Adjust code to your projects needs)
 
-After installing packages, to use flask session object for cookies, do the following:
+### Start virtual environment
+
+To check if you already have virtualenv installed:
+
+```
+virtualenv --version
+```
+
+putout: 20.31.2 or higher
+
+If a version number was not displayed install virtualenv:
+
+```
+pip3 install virtualenv
+```
+
+Note: installation may very depending on the OS you're using.
+
+To start the virtual environment:
+
+```
+virtualenv -p python3 venv
+```
+
+To activate environment:
+
+```
+source venv/bin/activate
+```
+
+Once the Environment has been set up you want to install the packages in requirement.txt file. Run:
+
+```
+pip3 install -r requirements.txt
+```
+
+To use flask session object for cookies, do the following:
 
 1. Create a .env file in the root directory
 2. Create an enviromental variable and set it equal to anything you want. You can also generate a key by running the following in the ubuntu terminal. Set the results to your variable.

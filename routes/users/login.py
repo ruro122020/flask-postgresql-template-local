@@ -19,4 +19,4 @@ class Login(Resource):
       return {'error': 'User does NOT exist'}, 400
 
 
-api.add_resource(Login, '/login', endpoint='login')
+api.add_resource(Login, '/login')
