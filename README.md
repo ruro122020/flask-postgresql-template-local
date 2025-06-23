@@ -1,6 +1,6 @@
 # FLASK API with PostgreSQL
 
-This template will get you started with a flask application using PostgreSQL and Marshmallow to design your data. It comes with a user account feature setup as well.
+This template will get you started with a flask application using PostgreSQL and Marshmallow. It comes with a user account feature setup as well.
 
 The user model, marshmallow schema, and login/signup/checksession routes have been created to get you started. (Adjust code to your projects needs)
 
