@@ -10,9 +10,8 @@ To check if you already have virtualenv installed:
 
 ```
 virtualenv --version
+#Output should be: 20.31.2 or higher
 ```
-
-putout: 20.31.2 or higher
 
 If a version number was not displayed install virtualenv:
 
@@ -22,13 +21,13 @@ pip3 install virtualenv
 
 Note: installation may very depending on the OS you're using.
 
-To start the virtual environment:
+To create the virtual environment:
 
 ```
 virtualenv -p python3 venv
 ```
 
-To activate environment:
+To start and activate environment:
 
 ```
 source venv/bin/activate
