@@ -4,9 +4,23 @@ This template will get you started with a flask application using PostgreSQL and
 
 The user model, marshmallow schema, and login/signup/checksession routes have been created to get you started. (Adjust code to your projects needs)
 
-### Start virtual environment
+### POSTGESQL SETUP
 
-To check if you already have virtualenv installed:
+Postgresql is a database server seperate from the flask application server. When starting the database locally, you can start it from any root in the terminal. It doesn't need to be at the root of your project but that is okay too.
+
+Start postgesql database:
+
+```
+sudo service postgresql start
+psql -U username -d database_name
+```
+
+Leave postgres terminal running...
+
+### VIRTUAL ENVIRONMENT SETUP
+
+Open another terminal.
+Check if you already have virtualenv installed:
 
 ```
 virtualenv --version
@@ -39,7 +53,17 @@ Once the Environment has been set up you want to install the packages in require
 pip3 install -r requirements.txt
 ```
 
-To use flask session object for cookies, do the following:
+### FLASK DB SETUP
+
+```
+flask db init
+flask db migrate -m 'initial migration'
+flask db upgrade
+```
+
+### COOKIES SESSION SETUP
+
+To cookies, do the following:
 
 1. Create a .env file in the root directory
 2. Create an enviromental variable and set it equal to anything you want. You can also generate a key by running the following in the ubuntu terminal. Set the results to your variable.
@@ -53,21 +77,6 @@ python -c 'import os; print(os.urandom(16))'
 ```
 app.secret_key= os.getenv('YOUR ENVIROMENT VARIABLE NAME GOES HERE')
 ```
-
-Assuming postgresql is installed and ready to use, to start working on the project:
-
-1. Login and start postgresql server in your ubuntu terminal
-
-Note: postgresql is a database server seperate from the flask application server. When starting the database locally, you can start it from any root in the ubuntu terminal. It doesn't need to be at the root of your project but that is okay too.
-
-```
-sudo service postgresql start
-psql -U username -d database_name
-```
-
-Leave postgres terminal running...
-
-Before following the instructions below be sure your postgresql database is running.
 
 Now that your posgresql database is running, continue with these instructions [here](https://ruthr.hashnode.dev/api-template-with-flask-sqlalchemy-postgresql)
 

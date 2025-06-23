@@ -8,6 +8,9 @@
 #.env
 .env
 
+#migration
+/migration
+
 # Ignore bundler config.
 /.bundle
 

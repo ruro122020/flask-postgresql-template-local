@@ -23,7 +23,7 @@ class Signup(Resource):
       session['user_id'] = user.id
       return user_schema.dump(user), 201
     except IntegrityError:
-       return {'error': 'Unproccessable Entity'}, 422
+       return {'error': 'User already exist'}, 422
     
 
 
