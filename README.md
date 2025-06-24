@@ -78,7 +78,7 @@ python -c 'import os; print(os.urandom(16))'
 app.secret_key= os.getenv('YOUR ENVIROMENT VARIABLE NAME GOES HERE')
 ```
 
-Now that your posgresql database is running, continue with these instructions [here](https://ruthr.hashnode.dev/api-template-with-flask-sqlalchemy-postgresql)
+Follow these instructions if you want to use pyenv [here](https://ruthr.hashnode.dev/api-template-with-flask-sqlalchemy-postgresql)
 
 Feel free to raise an issue if you run into any problems!
 
