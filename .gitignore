@@ -9,7 +9,7 @@
 .env
 
 #migration
-migrations
+migrations/
 
 # Ignore bundler config.
 /.bundle
