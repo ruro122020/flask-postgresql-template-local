@@ -14,7 +14,6 @@ class Signup(Resource):
       username=json.get('username'),
       email=json.get('email'))
     
-   
     user.password_hash = json.get('password')
  
     try:
