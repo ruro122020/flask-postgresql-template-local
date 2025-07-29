@@ -53,6 +53,12 @@ Once the Environment has been set up you want to install the packages in require
 pip3 install -r requirements.txt
 ```
 
+To run the flask application
+
+```
+python app.py
+```
+
 ### FLASK DB SETUP
 
 ```
